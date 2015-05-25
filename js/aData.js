@@ -1,8 +1,7 @@
 /**
  * Created by bliu on 25/05/15.
  */
-var aData =
-{
+var aData = {
     "success": true,
     "code": 200,
     "msg": "操作成功",
@@ -13,7 +12,10 @@ var aData =
         "createTime": 1430181329000,
         "type": 101,
         "pageMode": 0,
-        "image": {"imgSrc": "view/images/yq0KA1T2vYSAEgo7AACovQVgHxk048.jpg", "isAdvancedUser": false},
+        "image": {
+            "imgSrc": "view/images/yq0KA1T2vYSAEgo7AACovQVgHxk048.jpg",
+            "isAdvancedUser": false
+        },
         "isTpl": 0,
         "isPromotion": 0,
         "status": 1,
@@ -50,8 +52,12 @@ var aData =
             "pageId": 72035724,
             "sceneId": 4851026,
             "type": "3",
-            "css": {"zIndex": "1"},
-            "properties": {"imgSrc": "view/images/yq0KA1U-1l6AZhVmAACRLdS7wJA588.png"}
+            "css": {
+                "zIndex": "1"
+            },
+            "properties": {
+                "imgSrc": "view/images/yq0KA1U-1l6AZhVmAACRLdS7wJA588.png"
+            }
         }, {
             "content": "",
             "css": {
@@ -87,14 +93,31 @@ var aData =
                 "width": "100px",
                 "height": "100px",
                 "src": "view/images/yq0KA1U-2HCAGxmCAAAWyku9dso721.png",
-                "imgStyle": {"width": 80, "height": 37, "marginTop": "0px", "marginLeft": "0px"},
-                "anim": [{"type": 11, "direction": 0, "duration": 3, "delay": 0, "countNum": 1}]
+                "imgStyle": {
+                    "width": 80,
+                    "height": 37,
+                    "marginTop": "0px",
+                    "marginLeft": "0px"
+                },
+                "anim": [{
+                    "type": 11,
+                    "direction": 0,
+                    "duration": 3,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
         }, {
             "content": "",
-            "css": {"top": 29, "left": 33, "zIndex": "3", "width": 80, "height": 18},
+            "css": {
+                "top": 29,
+                "left": 33,
+                "zIndex": "3",
+                "width": 80,
+                "height": 18
+            },
             "id": 724,
             "num": 1,
             "pageId": 72035724,
@@ -102,14 +125,31 @@ var aData =
                 "width": "100px",
                 "height": "100px",
                 "src": "view/images/yq0KA1U-2ROAIma_AAAeOVdbwps048.png",
-                "imgStyle": {"width": 80, "height": 18, "marginTop": "0", "marginLeft": "0"},
-                "anim": [{"type": 13, "direction": 0, "duration": 1, "delay": 2, "countNum": 1}]
+                "imgStyle": {
+                    "width": 80,
+                    "height": 18,
+                    "marginTop": "0",
+                    "marginLeft": "0"
+                },
+                "anim": [{
+                    "type": 13,
+                    "direction": 0,
+                    "duration": 1,
+                    "delay": 2,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
         }, {
             "content": "",
-            "css": {"top": 147, "left": 43, "zIndex": "4", "width": 245, "height": 156},
+            "css": {
+                "top": 147,
+                "left": 43,
+                "zIndex": "4",
+                "width": 245,
+                "height": 156
+            },
             "id": 749,
             "num": 1,
             "pageId": 72035724,
@@ -117,8 +157,19 @@ var aData =
                 "width": 245,
                 "height": 156,
                 "src": "view/images/yq0KA1U-2leAS-XFAABWANREcX4989.png",
-                "imgStyle": {"width": 245, "height": 156, "marginTop": "0px", "marginLeft": "0px"},
-                "anim": [{"type": 12, "direction": 0, "duration": 2, "delay": 2, "countNum": 1}]
+                "imgStyle": {
+                    "width": 245,
+                    "height": 156,
+                    "marginTop": "0px",
+                    "marginLeft": "0px"
+                },
+                "anim": [{
+                    "type": 12,
+                    "direction": 0,
+                    "duration": 2,
+                    "delay": 2,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
@@ -131,11 +182,15 @@ var aData =
         "name": null,
         "properties": null,
         "elements": [{
-            "css": {"zIndex": "1"},
+            "css": {
+                "zIndex": "1"
+            },
             "id": 934,
             "num": 0,
             "pageId": 72050176,
-            "properties": {"imgSrc": "view/images/yq0KA1U-1guAAZrsAAcoI8EFyqo939.png"},
+            "properties": {
+                "imgSrc": "view/images/yq0KA1U-1guAAZrsAAcoI8EFyqo939.png"
+            },
             "sceneId": 4851026,
             "type": 3
         }, {
@@ -172,7 +227,13 @@ var aData =
             "properties": {
                 "width": 320,
                 "height": 259,
-                "anim": [{"type": 8, "direction": 0, "duration": 1, "delay": 0, "countNum": 1}]
+                "anim": [{
+                    "type": 8,
+                    "direction": 0,
+                    "duration": 1,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 2
@@ -211,8 +272,19 @@ var aData =
                 "width": 189,
                 "height": 89,
                 "src": "view/images/yq0KA1U-2AiACHONAAA5O2oO2ew767.png",
-                "imgStyle": {"width": 202, "height": 89, "marginTop": "0px", "marginLeft": "-6.5px"},
-                "anim": [{"type": 12, "direction": 0, "duration": 1.4, "delay": 0, "countNum": 1}]
+                "imgStyle": {
+                    "width": 202,
+                    "height": 89,
+                    "marginTop": "0px",
+                    "marginLeft": "-6.5px"
+                },
+                "anim": [{
+                    "type": 12,
+                    "direction": 0,
+                    "duration": 1.4,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
@@ -250,7 +322,13 @@ var aData =
             "properties": {
                 "width": 320,
                 "height": 258,
-                "anim": [{"type": 13, "direction": 0, "duration": 1.4, "delay": 0, "countNum": 1}]
+                "anim": [{
+                    "type": 13,
+                    "direction": 0,
+                    "duration": 1.4,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 2
@@ -263,16 +341,26 @@ var aData =
         "name": null,
         "properties": null,
         "elements": [{
-            "css": {"zIndex": "1"},
+            "css": {
+                "zIndex": "1"
+            },
             "id": 934,
             "num": 0,
             "pageId": 72050176,
-            "properties": {"imgSrc": "view/images/yq0KA1U-1l6AZhVmAACRLdS7wJA588.png"},
+            "properties": {
+                "imgSrc": "view/images/yq0KA1U-1l6AZhVmAACRLdS7wJA588.png"
+            },
             "sceneId": 4851026,
             "type": 3
         }, {
             "content": "",
-            "css": {"top": 102, "left": 24, "zIndex": "2", "width": 271, "height": 268},
+            "css": {
+                "top": 102,
+                "left": 24,
+                "zIndex": "2",
+                "width": 271,
+                "height": 268
+            },
             "id": 105,
             "num": 1,
             "pageId": 72052629,
@@ -280,14 +368,31 @@ var aData =
                 "width": 271,
                 "height": 268,
                 "src": "view/images/yq0KA1U-4BKARDhTAABNnzZZiig702.png",
-                "imgStyle": {"width": 271, "height": 268, "marginTop": "0px", "marginLeft": "0px"},
-                "anim": [{"type": 8, "direction": 0, "duration": 2, "delay": 0, "countNum": 1}]
+                "imgStyle": {
+                    "width": 271,
+                    "height": 268,
+                    "marginTop": "0px",
+                    "marginLeft": "0px"
+                },
+                "anim": [{
+                    "type": 8,
+                    "direction": 0,
+                    "duration": 2,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
         }, {
             "content": "",
-            "css": {"top": 104, "left": 29.015625, "zIndex": "3", "width": 128, "height": 125},
+            "css": {
+                "top": 104,
+                "left": 29.015625,
+                "zIndex": "3",
+                "width": 128,
+                "height": 125
+            },
             "id": 522,
             "num": 1,
             "pageId": 72052629,
@@ -295,8 +400,19 @@ var aData =
                 "width": 128,
                 "height": 125,
                 "src": "view/images/yq0KA1U-1-mAVmXaAABAS2RIIAk701.png",
-                "imgStyle": {"width": 128, "height": 125, "marginTop": "0px", "marginLeft": "0px"},
-                "anim": [{"type": 2, "direction": 1, "duration": 0.6, "delay": 0, "countNum": 1}]
+                "imgStyle": {
+                    "width": 128,
+                    "height": 125,
+                    "marginTop": "0px",
+                    "marginLeft": "0px"
+                },
+                "anim": [{
+                    "type": 2,
+                    "direction": 1,
+                    "duration": 0.6,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
@@ -335,14 +451,31 @@ var aData =
                 "width": 129,
                 "height": 127,
                 "src": "view/images/yq0KA1U-1-uABGS8AAF7qYJLezY534.png",
-                "imgStyle": {"width": 129, "height": 127, "marginTop": "0px", "marginLeft": "0px"},
-                "anim": [{"type": 2, "direction": 1, "duration": 0.6, "delay": 0.4, "countNum": 1}]
+                "imgStyle": {
+                    "width": 129,
+                    "height": 127,
+                    "marginTop": "0px",
+                    "marginLeft": "0px"
+                },
+                "anim": [{
+                    "type": 2,
+                    "direction": 1,
+                    "duration": 0.6,
+                    "delay": 0.4,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
         }, {
             "content": "",
-            "css": {"top": 205, "left": 26.765625, "zIndex": "5", "width": 109, "height": 142},
+            "css": {
+                "top": 205,
+                "left": 26.765625,
+                "zIndex": "5",
+                "width": 109,
+                "height": 142
+            },
             "id": 390,
             "num": 1,
             "pageId": 72052629,
@@ -350,14 +483,31 @@ var aData =
                 "width": 109,
                 "height": 142,
                 "src": "view/images/yq0KA1U-1_GALVDdAAFXjjVxroA033.png",
-                "imgStyle": {"width": 109, "height": 143, "marginTop": "-0.5px", "marginLeft": "0px"},
-                "anim": [{"type": 2, "direction": 0, "duration": 0.6, "delay": 1.6, "countNum": 1}]
+                "imgStyle": {
+                    "width": 109,
+                    "height": 143,
+                    "marginTop": "-0.5px",
+                    "marginLeft": "0px"
+                },
+                "anim": [{
+                    "type": 2,
+                    "direction": 0,
+                    "duration": 0.6,
+                    "delay": 1.6,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
         }, {
             "content": "",
-            "css": {"top": 283, "left": 90, "zIndex": "6", "width": 136, "height": 85},
+            "css": {
+                "top": 283,
+                "left": 90,
+                "zIndex": "6",
+                "width": 136,
+                "height": 85
+            },
             "id": 713,
             "num": 1,
             "pageId": 72052629,
@@ -365,14 +515,31 @@ var aData =
                 "width": 136,
                 "height": 85,
                 "src": "view/images/yq0KA1U-1--AGte7AAERzMhrd2Y852.png",
-                "imgStyle": {"width": 137, "height": 85, "marginTop": "0px", "marginLeft": "-0.5px"},
-                "anim": [{"type": 2, "direction": 0, "duration": 0.6, "delay": 1.2, "countNum": 1}]
+                "imgStyle": {
+                    "width": 137,
+                    "height": 85,
+                    "marginTop": "0px",
+                    "marginLeft": "-0.5px"
+                },
+                "anim": [{
+                    "type": 2,
+                    "direction": 0,
+                    "duration": 0.6,
+                    "delay": 1.2,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
         }, {
             "content": "",
-            "css": {"top": 208, "left": 182, "zIndex": "7", "width": 107, "height": 139},
+            "css": {
+                "top": 208,
+                "left": 182,
+                "zIndex": "7",
+                "width": 107,
+                "height": 139
+            },
             "id": 71,
             "num": 1,
             "pageId": 72052629,
@@ -380,14 +547,31 @@ var aData =
                 "width": 107,
                 "height": 139,
                 "src": "view/images/yq0KA1U-1-2AV0SVAAFVjT3tg8c231.png",
-                "imgStyle": {"width": 107, "height": 139, "marginTop": "0px", "marginLeft": "0px"},
-                "anim": [{"type": 2, "direction": 2, "duration": 0.6, "delay": 0.8, "countNum": 1}]
+                "imgStyle": {
+                    "width": 107,
+                    "height": 139,
+                    "marginTop": "0px",
+                    "marginLeft": "0px"
+                },
+                "anim": [{
+                    "type": 2,
+                    "direction": 2,
+                    "duration": 0.6,
+                    "delay": 0.8,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
         }, {
             "content": "",
-            "css": {"top": 385, "left": 31, "zIndex": "8", "width": 118, "height": 62},
+            "css": {
+                "top": 385,
+                "left": 31,
+                "zIndex": "8",
+                "width": 118,
+                "height": 62
+            },
             "id": 346,
             "num": 1,
             "pageId": 72052629,
@@ -395,14 +579,31 @@ var aData =
                 "width": 118,
                 "height": 62,
                 "src": "view/images/yq0KA1U-5ESAOxWwAAA4iohYObc752.png",
-                "imgStyle": {"width": 118, "height": 62, "marginTop": "0px", "marginLeft": "0px"},
-                "anim": [{"type": 1, "direction": 0, "duration": 1.8, "delay": 0, "countNum": 1}]
+                "imgStyle": {
+                    "width": 118,
+                    "height": 62,
+                    "marginTop": "0px",
+                    "marginLeft": "0px"
+                },
+                "anim": [{
+                    "type": 1,
+                    "direction": 0,
+                    "duration": 1.8,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
         }, {
             "content": "",
-            "css": {"top": 386, "left": 177, "zIndex": "9", "width": 108, "height": 58},
+            "css": {
+                "top": 386,
+                "left": 177,
+                "zIndex": "9",
+                "width": 108,
+                "height": 58
+            },
             "id": 30,
             "num": 1,
             "pageId": 72052629,
@@ -410,8 +611,19 @@ var aData =
                 "width": 108,
                 "height": 58,
                 "src": "view/images/yq0KA1U-5EKAA_eaAAA2yuLK7S0885.png",
-                "imgStyle": {"width": 108, "height": 58, "marginTop": "0px", "marginLeft": "0px"},
-                "anim": [{"type": 1, "direction": 2, "duration": 1.8, "delay": 0, "countNum": 1}]
+                "imgStyle": {
+                    "width": 108,
+                    "height": 58,
+                    "marginTop": "0px",
+                    "marginLeft": "0px"
+                },
+                "anim": [{
+                    "type": 1,
+                    "direction": 2,
+                    "duration": 1.8,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
@@ -446,7 +658,10 @@ var aData =
             "id": 91,
             "num": 1,
             "pageId": 72052629,
-            "properties": {"width": 131, "height": 35},
+            "properties": {
+                "width": 131,
+                "height": 35
+            },
             "sceneId": 4851026,
             "type": 2
         }, {
@@ -483,7 +698,13 @@ var aData =
             "properties": {
                 "width": 149,
                 "height": 24,
-                "anim": [{"type": 1, "direction": 0, "duration": 1.6, "delay": 0, "countNum": 1}]
+                "anim": [{
+                    "type": 1,
+                    "direction": 0,
+                    "duration": 1.6,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 2
@@ -521,7 +742,13 @@ var aData =
             "properties": {
                 "width": 149,
                 "height": 24,
-                "anim": [{"type": 1, "direction": 2, "duration": 1.8, "delay": 0, "countNum": 1}]
+                "anim": [{
+                    "type": 1,
+                    "direction": 2,
+                    "duration": 1.8,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 2
@@ -534,16 +761,26 @@ var aData =
         "name": null,
         "properties": null,
         "elements": [{
-            "css": {"zIndex": "1"},
+            "css": {
+                "zIndex": "1"
+            },
             "id": 129,
             "num": 0,
             "pageId": 72112848,
-            "properties": {"imgSrc": "view/images/yq0KA1U-6yeAaCC4AAAfy4TUP2A881.png"},
+            "properties": {
+                "imgSrc": "view/images/yq0KA1U-6yeAaCC4AAAfy4TUP2A881.png"
+            },
             "sceneId": 4851026,
             "type": 3
         }, {
             "content": "",
-            "css": {"top": 22, "left": 0, "zIndex": "2", "width": 320, "height": 155},
+            "css": {
+                "top": 22,
+                "left": 0,
+                "zIndex": "2",
+                "width": 320,
+                "height": 155
+            },
             "id": 7,
             "num": 1,
             "pageId": 72112848,
@@ -551,14 +788,31 @@ var aData =
                 "width": 320,
                 "height": 155,
                 "src": "view/images/yq0KA1U-19GARf8hAAC2z9VAPAs699.png",
-                "imgStyle": {"width": 320, "height": 155, "marginTop": "0px", "marginLeft": "0px"},
-                "anim": [{"type": 12, "direction": 0, "duration": 2, "delay": 0, "countNum": 1}]
+                "imgStyle": {
+                    "width": 320,
+                    "height": 155,
+                    "marginTop": "0px",
+                    "marginLeft": "0px"
+                },
+                "anim": [{
+                    "type": 12,
+                    "direction": 0,
+                    "duration": 2,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
         }, {
             "content": "",
-            "css": {"top": 140, "left": 0, "zIndex": "3", "width": 320, "height": 112},
+            "css": {
+                "top": 140,
+                "left": 0,
+                "zIndex": "3",
+                "width": 320,
+                "height": 112
+            },
             "id": 738,
             "num": 1,
             "pageId": 72112848,
@@ -566,14 +820,31 @@ var aData =
                 "width": 320,
                 "height": 112,
                 "src": "view/images/yq0KA1U-19aAYlTEAABcXgm_1Fk646.png",
-                "imgStyle": {"width": 339, "height": 112, "marginTop": "0px", "marginLeft": "-9.5px"},
-                "anim": [{"type": 2, "direction": 2, "duration": 2, "delay": 0, "countNum": 1}]
+                "imgStyle": {
+                    "width": 339,
+                    "height": 112,
+                    "marginTop": "0px",
+                    "marginLeft": "-9.5px"
+                },
+                "anim": [{
+                    "type": 2,
+                    "direction": 2,
+                    "duration": 2,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
         }, {
             "content": "",
-            "css": {"top": 241, "left": 0, "zIndex": "4", "width": 320, "height": 117},
+            "css": {
+                "top": 241,
+                "left": 0,
+                "zIndex": "4",
+                "width": 320,
+                "height": 117
+            },
             "id": 654,
             "num": 1,
             "pageId": 72112848,
@@ -581,14 +852,31 @@ var aData =
                 "width": 320,
                 "height": 117,
                 "src": "view/images/yq0KA1U-182Ae1BVAADD3PpVNHI616.png",
-                "imgStyle": {"width": 476, "height": 117, "marginTop": "0px", "marginLeft": "-78px"},
-                "anim": [{"type": 12, "direction": 0, "duration": 2, "delay": 0, "countNum": 1}]
+                "imgStyle": {
+                    "width": 476,
+                    "height": 117,
+                    "marginTop": "0px",
+                    "marginLeft": "-78px"
+                },
+                "anim": [{
+                    "type": 12,
+                    "direction": 0,
+                    "duration": 2,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
         }, {
             "content": "",
-            "css": {"top": 343, "left": 0, "zIndex": "5", "width": 320, "height": 123},
+            "css": {
+                "top": 343,
+                "left": 0,
+                "zIndex": "5",
+                "width": 320,
+                "height": 123
+            },
             "id": 18,
             "num": 1,
             "pageId": 72112848,
@@ -596,14 +884,31 @@ var aData =
                 "width": 320,
                 "height": 123,
                 "src": "view/images/yq0KA1U-19OAJdLlAACmk8185vk878.png",
-                "imgStyle": {"width": 406, "height": 123, "marginTop": "0px", "marginLeft": "-43.5px"},
-                "anim": [{"type": 2, "direction": 2, "duration": 2, "delay": 0, "countNum": 1}]
+                "imgStyle": {
+                    "width": 406,
+                    "height": 123,
+                    "marginTop": "0px",
+                    "marginLeft": "-43.5px"
+                },
+                "anim": [{
+                    "type": 2,
+                    "direction": 2,
+                    "duration": 2,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
         }, {
             "content": "",
-            "css": {"top": 6, "left": 0, "zIndex": "6", "width": 124, "height": 50},
+            "css": {
+                "top": 6,
+                "left": 0,
+                "zIndex": "6",
+                "width": 124,
+                "height": 50
+            },
             "id": 415,
             "num": 1,
             "pageId": 72112848,
@@ -611,8 +916,19 @@ var aData =
                 "width": 124,
                 "height": 50,
                 "src": "view/images/yq0KA1U-7DeANT_SAAAxnvAAPWM866.png",
-                "imgStyle": {"width": 124, "height": 50, "marginTop": "0px", "marginLeft": "0px"},
-                "anim": [{"type": 8, "direction": 0, "duration": 1, "delay": 0, "countNum": 1}]
+                "imgStyle": {
+                    "width": 124,
+                    "height": 50,
+                    "marginTop": "0px",
+                    "marginLeft": "0px"
+                },
+                "anim": [{
+                    "type": 8,
+                    "direction": 0,
+                    "duration": 1,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
@@ -625,11 +941,15 @@ var aData =
         "name": null,
         "properties": null,
         "elements": [{
-            "css": {"zIndex": "1"},
+            "css": {
+                "zIndex": "1"
+            },
             "id": 297,
             "num": 0,
             "pageId": 72132503,
-            "properties": {"imgSrc": "view/images/yq0KA1U-6uKAbWqtAACRLdS7wJA262.png"},
+            "properties": {
+                "imgSrc": "view/images/yq0KA1U-6uKAbWqtAACRLdS7wJA262.png"
+            },
             "sceneId": 4851026,
             "type": 3
         }, {
@@ -666,7 +986,13 @@ var aData =
             "properties": {
                 "width": 142,
                 "height": 29,
-                "anim": [{"type": 8, "direction": 0, "duration": 1, "delay": 0, "countNum": 1}]
+                "anim": [{
+                    "type": 8,
+                    "direction": 0,
+                    "duration": 1,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 2
@@ -705,8 +1031,19 @@ var aData =
                 "width": 278,
                 "height": 354,
                 "src": "view/images/yq0KA1U-7yGAKaTKAACz8ibC6DU579.png",
-                "imgStyle": {"width": 292, "height": 354, "marginTop": "0px", "marginLeft": "-7px"},
-                "anim": [{"type": 3, "direction": 0, "duration": 2, "delay": 0, "countNum": 1}]
+                "imgStyle": {
+                    "width": 292,
+                    "height": 354,
+                    "marginTop": "0px",
+                    "marginLeft": "-7px"
+                },
+                "anim": [{
+                    "type": 3,
+                    "direction": 0,
+                    "duration": 2,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
@@ -744,20 +1081,39 @@ var aData =
             "properties": {
                 "width": 320,
                 "height": 105,
-                "anim": [{"type": 2, "direction": 3, "duration": 1, "delay": 0, "countNum": 1}]
+                "anim": [{
+                    "type": 2,
+                    "direction": 3,
+                    "duration": 1,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 2
         }, {
             "content": "<div style=\"text-align: center;\"><span style=\"font-size: small; color: inherit; line-height: inherit; background-color: initial;\"><br></span></div><div style=\"text-align: center;\"><span style=\"font-size: small; line-height: inherit; background-color: initial;\"><font color=\"#ffffff\">iPod Touch 随手掌控，操作灵活顺畅；让点菜更傻瓜，服务员10分钟无培训掌握；即点即发，加快点菜速度，让出单更迅捷。</font></span><br></div>",
-            "css": {"top": 363, "left": 0, "zIndex": "5", "lineHeight": "1.0", "width": 320, "height": 123},
+            "css": {
+                "top": 363,
+                "left": 0,
+                "zIndex": "5",
+                "lineHeight": "1.0",
+                "width": 320,
+                "height": 123
+            },
             "id": 388,
             "num": 1,
             "pageId": 72132503,
             "properties": {
                 "width": 320,
                 "height": 123,
-                "anim": [{"type": 2, "direction": 3, "duration": 1, "delay": 0, "countNum": 1}]
+                "anim": [{
+                    "type": 2,
+                    "direction": 3,
+                    "duration": 1,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 2
@@ -770,11 +1126,15 @@ var aData =
         "name": null,
         "properties": null,
         "elements": [{
-            "css": {"zIndex": "1"},
+            "css": {
+                "zIndex": "1"
+            },
             "id": 703,
             "num": 0,
             "pageId": 72157601,
-            "properties": {"imgSrc": "view/images/yq0KA1U-1gWAAzfOAAQ_8pJ-GW0221.png"},
+            "properties": {
+                "imgSrc": "view/images/yq0KA1U-1gWAAzfOAAQ_8pJ-GW0221.png"
+            },
             "sceneId": 4851026,
             "type": 3
         }, {
@@ -811,7 +1171,13 @@ var aData =
             "properties": {
                 "width": 320,
                 "height": 246,
-                "anim": [{"type": 8, "direction": 0, "duration": 2, "delay": 0, "countNum": 1}]
+                "anim": [{
+                    "type": 8,
+                    "direction": 0,
+                    "duration": 2,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 2
@@ -849,20 +1215,39 @@ var aData =
             "properties": {
                 "width": 320,
                 "height": 184,
-                "anim": [{"type": 12, "direction": 0, "duration": 2, "delay": 0, "countNum": 1}]
+                "anim": [{
+                    "type": 12,
+                    "direction": 0,
+                    "duration": 2,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 2
         }, {
             "content": "<font color=\"#ffffff\" size=\"3\"><b>iiYum 自助点餐方案</b></font>",
-            "css": {"top": 110, "left": 64, "zIndex": "4", "lineHeight": "1.0", "width": 181, "height": 38},
+            "css": {
+                "top": 110,
+                "left": 64,
+                "zIndex": "4",
+                "lineHeight": "1.0",
+                "width": 181,
+                "height": 38
+            },
             "id": 280,
             "num": 1,
             "pageId": 72157601,
             "properties": {
                 "width": 181,
                 "height": 38,
-                "anim": [{"type": 13, "direction": 0, "duration": 1, "delay": 0, "countNum": 1}]
+                "anim": [{
+                    "type": 13,
+                    "direction": 0,
+                    "duration": 1,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 2
@@ -875,16 +1260,26 @@ var aData =
         "name": null,
         "properties": null,
         "elements": [{
-            "css": {"zIndex": "1"},
+            "css": {
+                "zIndex": "1"
+            },
             "id": 580,
             "num": 0,
             "pageId": 72284113,
-            "properties": {"imgSrc": "view/images/yq0KA1U-1l6AZhVmAACRLdS7wJA588.png"},
+            "properties": {
+                "imgSrc": "view/images/yq0KA1U-1l6AZhVmAACRLdS7wJA588.png"
+            },
             "sceneId": 4851026,
             "type": 3
         }, {
             "content": "",
-            "css": {"top": 90, "left": 51, "zIndex": "2", "width": 88, "height": 356},
+            "css": {
+                "top": 90,
+                "left": 51,
+                "zIndex": "2",
+                "width": 88,
+                "height": 356
+            },
             "id": 531,
             "num": 1,
             "pageId": 72284113,
@@ -892,14 +1287,31 @@ var aData =
                 "width": 88,
                 "height": 356,
                 "src": "view/images/yq0KA1U_DVeALko9AAEEvxktzsY308.png",
-                "imgStyle": {"width": 88, "height": 359, "marginTop": "-1.5px", "marginLeft": "0px"},
-                "anim": [{"type": 8, "direction": 3, "duration": 1, "delay": 0, "countNum": 1}]
+                "imgStyle": {
+                    "width": 88,
+                    "height": 359,
+                    "marginTop": "-1.5px",
+                    "marginLeft": "0px"
+                },
+                "anim": [{
+                    "type": 8,
+                    "direction": 3,
+                    "duration": 1,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
         }, {
             "content": "",
-            "css": {"top": 93, "left": 193, "zIndex": "3", "width": 88, "height": 362},
+            "css": {
+                "top": 93,
+                "left": 193,
+                "zIndex": "3",
+                "width": 88,
+                "height": 362
+            },
             "id": 715,
             "num": 1,
             "pageId": 72284113,
@@ -907,8 +1319,19 @@ var aData =
                 "width": 88,
                 "height": 362,
                 "src": "view/images/yq0KA1U_DVmAcu96AAEYAkMXScw858.png",
-                "imgStyle": {"width": 88, "height": 364, "marginTop": "-1px", "marginLeft": "0px"},
-                "anim": [{"type": 8, "direction": 0, "duration": 1.2, "delay": 0, "countNum": 1}]
+                "imgStyle": {
+                    "width": 88,
+                    "height": 364,
+                    "marginTop": "-1px",
+                    "marginLeft": "0px"
+                },
+                "anim": [{
+                    "type": 8,
+                    "direction": 0,
+                    "duration": 1.2,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
@@ -946,7 +1369,13 @@ var aData =
             "properties": {
                 "width": 172,
                 "height": 36,
-                "anim": [{"type": 12, "direction": 0, "duration": 1, "delay": 0, "countNum": 1}]
+                "anim": [{
+                    "type": 12,
+                    "direction": 0,
+                    "duration": 1,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 2
@@ -959,11 +1388,15 @@ var aData =
         "name": null,
         "properties": null,
         "elements": [{
-            "css": {"zIndex": "1"},
+            "css": {
+                "zIndex": "1"
+            },
             "id": 666,
             "num": 0,
             "pageId": 72291562,
-            "properties": {"imgSrc": "view/images/yq0KA1U_DzmALxMVAAKuOzTdS_Q594.jpg"},
+            "properties": {
+                "imgSrc": "view/images/yq0KA1U_DzmALxMVAAKuOzTdS_Q594.jpg"
+            },
             "sceneId": 4851026,
             "type": 3
         }, {
@@ -1000,20 +1433,39 @@ var aData =
             "properties": {
                 "width": 320,
                 "height": 246,
-                "anim": [{"type": 8, "direction": 3, "duration": 1, "delay": 0, "countNum": 1}]
+                "anim": [{
+                    "type": 8,
+                    "direction": 3,
+                    "duration": 1,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 2
         }, {
             "content": "<font color=\"#ffffff\" size=\"3\"><b>大屏幕智能配菜助手</b></font>",
-            "css": {"top": 255, "left": 70, "zIndex": "3", "lineHeight": "1.0", "width": 181, "height": 38},
+            "css": {
+                "top": 255,
+                "left": 70,
+                "zIndex": "3",
+                "lineHeight": "1.0",
+                "width": 181,
+                "height": 38
+            },
             "id": 773,
             "num": 1,
             "pageId": 72291562,
             "properties": {
                 "width": 181,
                 "height": 38,
-                "anim": [{"type": 2, "direction": 2, "duration": 1, "delay": 0, "countNum": 1}]
+                "anim": [{
+                    "type": 2,
+                    "direction": 2,
+                    "duration": 1,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 2
@@ -1051,7 +1503,13 @@ var aData =
             "properties": {
                 "width": 320,
                 "height": 171,
-                "anim": [{"type": 12, "direction": 0, "duration": 1, "delay": 0, "countNum": 1}]
+                "anim": [{
+                    "type": 12,
+                    "direction": 0,
+                    "duration": 1,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 2
@@ -1064,16 +1522,26 @@ var aData =
         "name": null,
         "properties": null,
         "elements": [{
-            "css": {"zIndex": "1"},
+            "css": {
+                "zIndex": "1"
+            },
             "id": 240,
             "num": 0,
             "pageId": 72298131,
-            "properties": {"imgSrc": "view/images/yq0KA1U-6uKAbWqtAACRLdS7wJA262.png"},
+            "properties": {
+                "imgSrc": "view/images/yq0KA1U-6uKAbWqtAACRLdS7wJA262.png"
+            },
             "sceneId": 4851026,
             "type": 3
         }, {
             "content": "",
-            "css": {"top": 245, "left": 13, "zIndex": "2", "width": 289, "height": 227},
+            "css": {
+                "top": 245,
+                "left": 13,
+                "zIndex": "2",
+                "width": 289,
+                "height": 227
+            },
             "id": 608,
             "num": 1,
             "pageId": 72298131,
@@ -1081,8 +1549,19 @@ var aData =
                 "width": 289,
                 "height": 227,
                 "src": "view/images/yq0KA1U_EZqAWAJWAAC7FPcdaAc945.png",
-                "imgStyle": {"width": 289, "height": 227, "marginTop": "0px", "marginLeft": "0px"},
-                "anim": [{"type": 12, "direction": 0, "duration": 2, "delay": 0, "countNum": 1}]
+                "imgStyle": {
+                    "width": 289,
+                    "height": 227,
+                    "marginTop": "0px",
+                    "marginLeft": "0px"
+                },
+                "anim": [{
+                    "type": 12,
+                    "direction": 0,
+                    "duration": 2,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
@@ -1120,20 +1599,39 @@ var aData =
             "properties": {
                 "width": 320,
                 "height": 226,
-                "anim": [{"type": 8, "direction": 3, "duration": 1, "delay": 0, "countNum": 1}]
+                "anim": [{
+                    "type": 8,
+                    "direction": 3,
+                    "duration": 1,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 2
         }, {
             "content": "<div style=\"text-align: center;\"><b style=\"color: rgb(255, 255, 255); font-size: medium; line-height: inherit; background-color: initial;\">智能传菜助手</b></div>",
-            "css": {"top": 4, "left": 70, "zIndex": "4", "lineHeight": "1.0", "width": 181, "height": 38},
+            "css": {
+                "top": 4,
+                "left": 70,
+                "zIndex": "4",
+                "lineHeight": "1.0",
+                "width": 181,
+                "height": 38
+            },
             "id": 999,
             "num": 1,
             "pageId": 72298131,
             "properties": {
                 "width": 181,
                 "height": 38,
-                "anim": [{"type": 2, "direction": 2, "duration": 1, "delay": 0, "countNum": 1}]
+                "anim": [{
+                    "type": 2,
+                    "direction": 2,
+                    "duration": 1,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 2
@@ -1171,7 +1669,13 @@ var aData =
             "properties": {
                 "width": 320,
                 "height": 175,
-                "anim": [{"type": 12, "direction": 0, "duration": 1, "delay": 0, "countNum": 1}]
+                "anim": [{
+                    "type": 12,
+                    "direction": 0,
+                    "duration": 1,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 2
@@ -1184,11 +1688,15 @@ var aData =
         "name": null,
         "properties": null,
         "elements": [{
-            "css": {"zIndex": "1"},
+            "css": {
+                "zIndex": "1"
+            },
             "id": 537,
             "num": 0,
             "pageId": 72308709,
-            "properties": {"imgSrc": "view/images/yq0KA1U-6uKAbWqtAACRLdS7wJA262.png"},
+            "properties": {
+                "imgSrc": "view/images/yq0KA1U-6uKAbWqtAACRLdS7wJA262.png"
+            },
             "sceneId": 4851026,
             "type": 3
         }, {
@@ -1225,7 +1733,13 @@ var aData =
             "properties": {
                 "width": 320,
                 "height": 486,
-                "anim": [{"type": 8, "direction": 3, "duration": 1, "delay": 0, "countNum": 1}]
+                "anim": [{
+                    "type": 8,
+                    "direction": 3,
+                    "duration": 1,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 2
@@ -1263,7 +1777,13 @@ var aData =
             "properties": {
                 "width": 229,
                 "height": 44,
-                "anim": [{"type": 2, "direction": 2, "duration": 1, "delay": 0, "countNum": 1}]
+                "anim": [{
+                    "type": 2,
+                    "direction": 2,
+                    "duration": 1,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 2
@@ -1301,13 +1821,25 @@ var aData =
             "properties": {
                 "width": 320,
                 "height": 260,
-                "anim": [{"type": 12, "direction": 0, "duration": 1, "delay": 0, "countNum": 1}]
+                "anim": [{
+                    "type": 12,
+                    "direction": 0,
+                    "duration": 1,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 2
         }, {
             "content": "",
-            "css": {"top": 339, "left": 9, "zIndex": "5", "width": 146, "height": 70},
+            "css": {
+                "top": 339,
+                "left": 9,
+                "zIndex": "5",
+                "width": 146,
+                "height": 70
+            },
             "id": 528,
             "num": 1,
             "pageId": 72308709,
@@ -1315,14 +1847,31 @@ var aData =
                 "width": 146,
                 "height": 70,
                 "src": "view/images/yq0KA1U_FkiAVQU6AA9m345gvkI032.jpg",
-                "imgStyle": {"width": 146, "height": 70, "marginTop": "0px", "marginLeft": "0px"},
-                "anim": [{"type": 12, "direction": 0, "duration": 0.8, "delay": 0, "countNum": 1}]
+                "imgStyle": {
+                    "width": 146,
+                    "height": 70,
+                    "marginTop": "0px",
+                    "marginLeft": "0px"
+                },
+                "anim": [{
+                    "type": 12,
+                    "direction": 0,
+                    "duration": 0.8,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
         }, {
             "content": "",
-            "css": {"top": 388, "left": 165, "zIndex": "6", "width": 146, "height": 75},
+            "css": {
+                "top": 388,
+                "left": 165,
+                "zIndex": "6",
+                "width": 146,
+                "height": 75
+            },
             "id": 49,
             "num": 1,
             "pageId": 72308709,
@@ -1330,8 +1879,19 @@ var aData =
                 "width": 146,
                 "height": 75,
                 "src": "view/images/yq0KA1U_FkCAMhe8AAN5t9RMJOM172.png",
-                "imgStyle": {"width": 146, "height": 75, "marginTop": "0px", "marginLeft": "0px"},
-                "anim": [{"type": 12, "direction": 0, "duration": 1.4, "delay": 0, "countNum": 1}]
+                "imgStyle": {
+                    "width": 146,
+                    "height": 75,
+                    "marginTop": "0px",
+                    "marginLeft": "0px"
+                },
+                "anim": [{
+                    "type": 12,
+                    "direction": 0,
+                    "duration": 1.4,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
@@ -1344,11 +1904,15 @@ var aData =
         "name": null,
         "properties": null,
         "elements": [{
-            "css": {"zIndex": "1"},
+            "css": {
+                "zIndex": "1"
+            },
             "id": 853,
             "num": 0,
             "pageId": 72329383,
-            "properties": {"imgSrc": "view/images/yq0KA1U-6yeAaCC4AAAfy4TUP2A881.png"},
+            "properties": {
+                "imgSrc": "view/images/yq0KA1U-6yeAaCC4AAAfy4TUP2A881.png"
+            },
             "sceneId": 4851026,
             "type": 3
         }, {
@@ -1385,13 +1949,25 @@ var aData =
             "properties": {
                 "width": 149,
                 "height": 44,
-                "anim": [{"type": 2, "direction": 2, "duration": 1, "delay": 0, "countNum": 1}]
+                "anim": [{
+                    "type": 2,
+                    "direction": 2,
+                    "duration": 1,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 2
         }, {
             "content": "",
-            "css": {"top": 215, "left": 175, "zIndex": "3", "width": 134, "height": 251},
+            "css": {
+                "top": 215,
+                "left": 175,
+                "zIndex": "3",
+                "width": 134,
+                "height": 251
+            },
             "id": 192,
             "num": 1,
             "pageId": 72329383,
@@ -1399,14 +1975,31 @@ var aData =
                 "width": 134,
                 "height": 251,
                 "src": "view/images/yq0KA1U_F6-AMNO1AACod9w6MmA770.png",
-                "imgStyle": {"width": 134, "height": 252, "marginTop": "-0.5px", "marginLeft": "0px"},
-                "anim": [{"type": 2, "direction": 0, "duration": 1.6, "delay": 0, "countNum": 1}]
+                "imgStyle": {
+                    "width": 134,
+                    "height": 252,
+                    "marginTop": "-0.5px",
+                    "marginLeft": "0px"
+                },
+                "anim": [{
+                    "type": 2,
+                    "direction": 0,
+                    "duration": 1.6,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
         }, {
             "content": "",
-            "css": {"top": 174, "left": 9, "zIndex": "4", "width": 146, "height": 251},
+            "css": {
+                "top": 174,
+                "left": 9,
+                "zIndex": "4",
+                "width": 146,
+                "height": 251
+            },
             "id": 944,
             "num": 1,
             "pageId": 72329383,
@@ -1414,8 +2007,19 @@ var aData =
                 "width": 146,
                 "height": 251,
                 "src": "view/images/yq0KA1U-2AmAfCYVAACGbIRQOcw885.png",
-                "imgStyle": {"width": 147, "height": 251, "marginTop": "0px", "marginLeft": "-0.5px"},
-                "anim": [{"type": 2, "direction": 2, "duration": 1.6, "delay": 0, "countNum": 1}]
+                "imgStyle": {
+                    "width": 147,
+                    "height": 251,
+                    "marginTop": "0px",
+                    "marginLeft": "-0.5px"
+                },
+                "anim": [{
+                    "type": 2,
+                    "direction": 2,
+                    "duration": 1.6,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
@@ -1453,13 +2057,25 @@ var aData =
             "properties": {
                 "width": 320,
                 "height": 100,
-                "anim": [{"type": 12, "direction": 0, "duration": 1, "delay": 0, "countNum": 1}]
+                "anim": [{
+                    "type": 12,
+                    "direction": 0,
+                    "duration": 1,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 2
         }, {
             "content": "",
-            "css": {"top": 293, "left": 68, "zIndex": "6", "width": 169, "height": 104},
+            "css": {
+                "top": 293,
+                "left": 68,
+                "zIndex": "6",
+                "width": 169,
+                "height": 104
+            },
             "id": 12,
             "num": 1,
             "pageId": 72329383,
@@ -1467,8 +2083,19 @@ var aData =
                 "width": 169,
                 "height": 104,
                 "src": "view/images/yq0KA1U_Go6ADUQzAAAeSzAlH44123.png",
-                "imgStyle": {"width": 171, "height": 104, "marginTop": "0px", "marginLeft": "-1px"},
-                "anim": [{"type": 12, "direction": 0, "duration": 1.4, "delay": 0, "countNum": 1}]
+                "imgStyle": {
+                    "width": 171,
+                    "height": 104,
+                    "marginTop": "0px",
+                    "marginLeft": "-1px"
+                },
+                "anim": [{
+                    "type": 12,
+                    "direction": 0,
+                    "duration": 1.4,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
@@ -1481,16 +2108,26 @@ var aData =
         "name": null,
         "properties": null,
         "elements": [{
-            "css": {"zIndex": "1"},
+            "css": {
+                "zIndex": "1"
+            },
             "id": 823,
             "num": 0,
             "pageId": 72319520,
-            "properties": {"imgSrc": "view/images/yq0KA1U-6yeAaCC4AAAfy4TUP2A881.png"},
+            "properties": {
+                "imgSrc": "view/images/yq0KA1U-6yeAaCC4AAAfy4TUP2A881.png"
+            },
             "sceneId": 4851026,
             "type": 3
         }, {
             "content": "",
-            "css": {"top": 215, "left": 19, "zIndex": "2", "width": 134, "height": 251},
+            "css": {
+                "top": 215,
+                "left": 19,
+                "zIndex": "2",
+                "width": 134,
+                "height": 251
+            },
             "id": 790,
             "num": 1,
             "pageId": 72319520,
@@ -1498,14 +2135,31 @@ var aData =
                 "width": 134,
                 "height": 251,
                 "src": "view/images/yq0KA1U_F6-AMNO1AACod9w6MmA770.png",
-                "imgStyle": {"width": 134, "height": 252, "marginTop": "-0.5px", "marginLeft": "0px"},
-                "anim": [{"type": 2, "direction": 2, "duration": 1.6, "delay": 0, "countNum": 1}]
+                "imgStyle": {
+                    "width": 134,
+                    "height": 252,
+                    "marginTop": "-0.5px",
+                    "marginLeft": "0px"
+                },
+                "anim": [{
+                    "type": 2,
+                    "direction": 2,
+                    "duration": 1.6,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
         }, {
             "content": "",
-            "css": {"top": 104, "left": 164, "zIndex": "3", "width": 143, "height": 246},
+            "css": {
+                "top": 104,
+                "left": 164,
+                "zIndex": "3",
+                "width": 143,
+                "height": 246
+            },
             "id": 843,
             "num": 1,
             "pageId": 72319520,
@@ -1513,8 +2167,19 @@ var aData =
                 "width": 143,
                 "height": 246,
                 "src": "view/images/yq0KA1U_GAaASndqAAC9jj0m4h0023.png",
-                "imgStyle": {"width": 143, "height": 246, "marginTop": "0px", "marginLeft": "-0.5px"},
-                "anim": [{"type": 2, "direction": 0, "duration": 1.6, "delay": 0, "countNum": 1}]
+                "imgStyle": {
+                    "width": 143,
+                    "height": 246,
+                    "marginTop": "0px",
+                    "marginLeft": "-0.5px"
+                },
+                "anim": [{
+                    "type": 2,
+                    "direction": 0,
+                    "duration": 1.6,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
@@ -1552,13 +2217,25 @@ var aData =
             "properties": {
                 "width": 149,
                 "height": 44,
-                "anim": [{"type": 2, "direction": 2, "duration": 1, "delay": 0, "countNum": 1}]
+                "anim": [{
+                    "type": 2,
+                    "direction": 2,
+                    "duration": 1,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 2
         }, {
             "content": "",
-            "css": {"top": 212, "left": 84, "zIndex": "5", "width": 208, "height": 90},
+            "css": {
+                "top": 212,
+                "left": 84,
+                "zIndex": "5",
+                "width": 208,
+                "height": 90
+            },
             "id": 856,
             "num": 1,
             "pageId": 72319520,
@@ -1566,8 +2243,19 @@ var aData =
                 "width": 208,
                 "height": 90,
                 "src": "view/images/yq0KA1U-2AuAGa1CAAAUTnkgwbQ943.png",
-                "imgStyle": {"width": 208, "height": 90, "marginTop": "0px", "marginLeft": "0px"},
-                "anim": [{"type": 12, "direction": 0, "duration": 1.4, "delay": 0, "countNum": 1}]
+                "imgStyle": {
+                    "width": 208,
+                    "height": 90,
+                    "marginTop": "0px",
+                    "marginLeft": "0px"
+                },
+                "anim": [{
+                    "type": 12,
+                    "direction": 0,
+                    "duration": 1.4,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
@@ -1605,7 +2293,13 @@ var aData =
             "properties": {
                 "width": 172,
                 "height": 150,
-                "anim": [{"type": 12, "direction": 0, "duration": 1, "delay": 0, "countNum": 1}]
+                "anim": [{
+                    "type": 12,
+                    "direction": 0,
+                    "duration": 1,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 2
@@ -1618,16 +2312,26 @@ var aData =
         "name": null,
         "properties": null,
         "elements": [{
-            "css": {"zIndex": "1"},
+            "css": {
+                "zIndex": "1"
+            },
             "id": 516,
             "num": 0,
             "pageId": 72339942,
-            "properties": {"imgSrc": "view/images/yq0KA1U-6yeAaCC4AAAfy4TUP2A881.png"},
+            "properties": {
+                "imgSrc": "view/images/yq0KA1U-6yeAaCC4AAAfy4TUP2A881.png"
+            },
             "sceneId": 4851026,
             "type": 3
         }, {
             "content": "",
-            "css": {"top": 127, "left": 18, "zIndex": "2", "width": 87, "height": 288},
+            "css": {
+                "top": 127,
+                "left": 18,
+                "zIndex": "2",
+                "width": 87,
+                "height": 288
+            },
             "id": 721,
             "num": 1,
             "pageId": 72339942,
@@ -1635,8 +2339,19 @@ var aData =
                 "width": 87,
                 "height": 288,
                 "src": "view/images/yq0KA1U-2AeAWYRIAABrrhR2BFI489.png",
-                "imgStyle": {"width": 92, "height": 288, "marginTop": "0px", "marginLeft": "-2.5px"},
-                "anim": [{"type": 8, "direction": 0, "duration": 1.4, "delay": 0, "countNum": 1}]
+                "imgStyle": {
+                    "width": 92,
+                    "height": 288,
+                    "marginTop": "0px",
+                    "marginLeft": "-2.5px"
+                },
+                "anim": [{
+                    "type": 8,
+                    "direction": 0,
+                    "duration": 1.4,
+                    "delay": 0,
+                    "countNum": 1
+                }]
             },
             "sceneId": 4851026,
             "type": 4
