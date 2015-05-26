@@ -1,0 +1,42 @@
+#img1 {
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 0s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+}
+
+#img2 {
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 0s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+}
+
+#img3 {
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 0s;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+}
+
+#p2img1 {
+	width: 202px;
+	height: 89px;
+	margin-top: 0px;
+	margin-left: -6.5px;
+
+	-moz-animation-duration: 1.4s;
+    -moz-animation-delay: 0s;
+    -moz-animation-iteration-count: 1.4s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+
+}
+
