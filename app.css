@@ -26,17 +26,31 @@
 }
 
 #p2img1 {
-	width: 202px;
-	height: 89px;
-	margin-top: 0px;
-	margin-left: -6.5px;
-
-	-moz-animation-duration: 1.4s;
+    width: 202px;
+    height: 89px;
+    margin-top: 0px;
+    margin-left: -6.5px;
+    -moz-animation-duration: 1.4s;
     -moz-animation-delay: 0s;
     -moz-animation-iteration-count: 1.4s;
     -webkit-animation-duration: 1s;
     -webkit-animation-delay: 0s;
     -webkit-animation-iteration-count: 1;
-
+}
+.img {
+	position: absolute;
 }
 
+.page3 #img7 {
+    width: 118px;
+    height: 62px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.page3 #img8 {
+    width: 108px;
+    height: 58px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
