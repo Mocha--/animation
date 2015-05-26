@@ -3,7 +3,7 @@
 var animationEnd = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend"
 
 $(document).ready(function() {
-    $("#container").load("components/page1.html", function() {
+    /*$("#container").load("components/page1.html", function() {
         $("#img2").hide()
         $("#img3").hide()
         $("#img1")
@@ -21,6 +21,15 @@ $(document).ready(function() {
                             .addClass("animated bounceInRight")
                     })
             })
+    })*/
+
+    $("#container").load("components/page3.html", function() {
+        $("#img1").addClass("animated fadeInDownBig")
+        $("#img2").addClass("animated fadeInDownBig")
+        $("#img3").addClass("animated fadeInRightBig")
+        $("#img4").addClass("animated fadeInRightBig")
+        $("#img5").addClass("animated fadeInLeftBig")
+        $("#img6").addClass("animated flip")
     })
 })
 
