@@ -1,30 +1,3 @@
-#img1 {
-    -moz-animation-duration: 1s;
-    -moz-animation-delay: 0s;
-    -moz-animation-iteration-count: 1;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-delay: 0s;
-    -webkit-animation-iteration-count: 1;
-}
-
-#img2 {
-    -moz-animation-duration: 1s;
-    -moz-animation-delay: 0s;
-    -moz-animation-iteration-count: 1;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-delay: 0s;
-    -webkit-animation-iteration-count: 1;
-}
-
-#img3 {
-    -moz-animation-duration: 1s;
-    -moz-animation-delay: 0s;
-    -moz-animation-iteration-count: 1;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-delay: 0s;
-    -webkit-animation-iteration-count: 1;
-}
-
 #p2img1 {
     width: 202px;
     height: 89px;
@@ -37,20 +10,90 @@
     -webkit-animation-delay: 0s;
     -webkit-animation-iteration-count: 1;
 }
+
 .img {
-	position: absolute;
+    position: absolute;
 }
 
-.page3 #img7 {
-    width: 118px;
-    height: 62px;
+.page3#img1 {
+    width: 128px;
+    height: 125px;
     margin-top: 0px;
     margin-left: 0px;
+    left: 29.0156px;
+    top: 104px;
+    z-index: 3;
 }
 
-.page3 #img8 {
+.page3#img2 {
+    width: 129px;
+    height: 127px;
+    margin-top: 0px;
+    margin-left: 0px;
+    left: 157px;
+    top: 105px;
+    z-index: 4;
+    transform: rotateZ(0deg);
+}
+
+.page3#img3 {
+    width: 107px;
+    height: 139px;
+    margin-top: 0px;
+    margin-left: 0px;
+    left: 182px;
+    top: 208px;
+    z-index: 7;
+}
+
+.page3#img4 {
+    width: 137px;
+    height: 85px;
+    margin-top: 0px;
+    margin-left: -0.5px;
+    left: 90px;
+    top: 283px;
+    z-index: 6;
+}
+
+.page3#img5 {
+    width: 109px;
+    height: 143px;
+    margin-top: -0.5px;
+    margin-left: 0px;
+    left: 26.7656px;
+    top: 205px;
+    z-index: 5;
+}
+
+.page3#img6 {
+    width: 271px;
+    height: 268px;
+    margin-top: 0px;
+    margin-left: 0px;
+    left: 24px;
+    top: 102px;
+    z-index: 2;
+}
+
+.page3#img7 {
     width: 108px;
     height: 58px;
     margin-top: 0px;
     margin-left: 0px;
+    width: 108px;
+    height: 58px;
+    left: 177px;
+    top: 386px;
+    z-index: 9;
+}
+
+.page3#img8 {
+    width: 118px;
+    height: 62px;
+    margin-top: 0px;
+    margin-left: 0px;
+    left: 31px;
+    top: 385px;
+    z-index: 8;
 }
