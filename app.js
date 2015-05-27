@@ -22,7 +22,6 @@ $(document).ready(function() {
                     })
             })
     })*/
-
     $("#container").load("components/page3.html", function() {
         $("#img2").hide()
         $("#img3").hide()
@@ -57,3 +56,4 @@ $(document).ready(function() {
             })
     })
 })
+
