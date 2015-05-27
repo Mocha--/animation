@@ -20,14 +20,32 @@ $(document).ready(function() {
                         .addClass("animated bounceInRight")
                 })
         })
-    $("#page1").on("swiperight", swipeDown)
-    $("#page2").on("swipeleft", swipeUp)
 
-    function swipeUp(event) {
+    $("#page1").on("swiperight", swipeRightToPage2)
+    $("#page2").on("swipeleft", swipeLeftToPage1)
+
+    function swipeLeftToPage1() {
         window.location.href = "#page1"
+        $("#img2").hide()
+        $("#img3").hide()
+        $("#img1")
+            .addClass("animated flip")
+            .one(animationEnd, function() {
+                $(this)
+                    .removeClass("flip")
+                    .addClass("fadeOut")
+                    .one(animationEnd, function() {
+                        $("#img2")
+                            .show()
+                            .addClass("animated rollIn")
+                        $("#img3")
+                            .show()
+                            .addClass("animated bounceInRight")
+                    })
+            })
     }
 
-    function swipeDown(event) {
+    function swipeRightToPage2() {
             window.location.href = "#page2"
         }
         /*$("#container").load("components/page1.html", function() {
