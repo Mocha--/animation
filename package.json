@@ -1,0 +1,24 @@
+{
+  "name": "iiyumanimation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "http-server": "^0.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "http-server ./ -p 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mocha--/animation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mocha--/animation/issues"
+  },
+  "homepage": "https://github.com/Mocha--/animation#readme"
+}
