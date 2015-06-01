@@ -10,6 +10,18 @@ var createImg = function(opt) {
     }
 
     if (opt.style) {
+        if (opt.style.left)
+            opt.style.left = opt.style.left.toString() + "px"
+        if (opt.style.right)
+            opt.style.right = opt.style.right.toString() + "px"
+        if (opt.style.top)
+            opt.style.top = opt.style.top.toString() + "px"
+        if (opt.style.bottom)
+            opt.style.bottom = opt.style.bottom.toString() + "px"
+        if (opt.style.height)
+            opt.style.height = opt.style.height.toString() + "px"
+        if (opt.style.width)
+            opt.style.width = opt.style.width.toString() + "px"
         var str = JSON.stringify(opt.style).replace(/,/g, ";").replace(/"/g, "").replace(/\{/, "").replace(/\}/, "")
         var style = 'style = "{}"'.format(str)
     }
@@ -27,6 +39,18 @@ var createDiv = function(opt) {
     }
     var innerHTML = opt.innerHTML
     if (opt.style) {
+        if (opt.style.left)
+            opt.style.left = opt.style.left.toString() + "px"
+        if (opt.style.right)
+            opt.style.right = opt.style.right.toString() + "px"
+        if (opt.style.top)
+            opt.style.top = opt.style.top.toString() + "px"
+        if (opt.style.bottom)
+            opt.style.bottom = opt.style.bottom.toString() + "px"
+        if (opt.style.height)
+            opt.style.height = opt.style.height.toString() + "px"
+        if (opt.style.width)
+            opt.style.width = opt.style.width.toString() + "px"
         var str = JSON.stringify(opt.style).replace(/,/g, ";").replace(/"/g, "").replace(/\{/, "").replace(/\}/, "")
         var style = 'style = "{}"'.format(str)
     }
@@ -72,7 +96,7 @@ $(document).ready(function() {
     })
     $("#container").append(pageStr)
 
-    $("#pageone").on("swipe", function(){
-    	window.location.href = ""
+    $("#container").on("swipe", function() {
+        window.location.href = "#2"
     })
 })

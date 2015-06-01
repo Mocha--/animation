@@ -9,11 +9,11 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <script>
     $(function() {
-        $("#pageone").on("swipe", swipeHandler);
-
+        $("#p1").on("swipe", swipeHandler);
+        $(window).on("orientationchange",function()
         function swipeHandler(event) {
-            //$(event.target).addClass("animated shake");
-            window.location.href = "#pagetwo"
+            $(event.target).addClass("animated shake");
+            window.location.href = "#p2"
         }
     })
     </script>
@@ -21,28 +21,20 @@
 
 <body>
 
-    <div data-role="page" id="pageone">
-        <div data-role="header">
-            <h1>Page1</h1>
-        </div>
+    <div data-role="page" id="p1">
+        
         <div data-role="content">
             <p>下滑</p>
         </div>
-        <div data-role="footer">
-            <h1>页脚文本</h1>
-        </div>
+        
     </div>
-    <div data-role="page" id="pagetwo">
-        <div data-role="header">
-            <h1>Page2</h1>
-        </div>
+    <div data-role="page" id="p2">
+        
         <div data-role="content">
             <p>点击链接返回页面一。</p>
-            <a href="#pageone">返回页面一</a>
+            <a href="#p1">返回页面一</a>
         </div>
-        <div data-role="footer">
-            <h1>页脚文本</h1>
-        </div>
+        
     </div>
     
 </body>
