@@ -60,11 +60,11 @@ $(document).ready(function() {
             eleStr += elementDIV
         })
         var pageDIV = createDiv({
-            "id": page.num,
+            "id": "page" + page.num,
             "innerHTML": eleStr,
             "dataRole": "page"
         })
         pageStr += pageDIV
     })
-    $("#container").append(pageStr)
+    $("body").append(pageStr)
 })
