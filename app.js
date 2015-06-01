@@ -1,17 +1,25 @@
-function createDiv(num){
-	return "<div data-role='page' id="+ num +"><div data-role='content'></div></div>"
+"use strict"
+
+format.extend(String.prototype)
+
+var createImg = function(src){
+	
 }
+
+var createDiv = function(num){
+	return "<div data-role='page' id= '{}'><div data-role='content'></div></div>".format(num)
+}
+
 $(document).ready(function() {
-    for (var i = 1; i <= aData.list.length; i++) {
-    	$("#container").append("<div data-role='page' id="+ i +"><div data-role='content'></div></div>")
-    }
-    for (var i = 1; i <= aData.list.length; i++) {
-    	for (var j = 1; j < aData.list[i-1].elements.length; j++) {
-            if (aData.list[i-1].elements[j].properties.src) {
-                $("#" + i).append("<img src=" + aData.list[i-1].elements[j].properties.src + "> <br />")
-            }
-           
-        }
-    }
-    
+	console.log("{}".format("hehehe"))
+	var pages = aData.list
+	pages.forEach(function(page){
+		var elements = page.elements
+		elements.forEach(function(element){
+			var contentId = "#content" + page.num
+
+			$(contentId).append("")
+		})
+	})
 })
+
