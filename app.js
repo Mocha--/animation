@@ -18,7 +18,9 @@ var createImg = function(opt) {
 var createDiv = function(opt) {
     var id = 'id = "{}"'.format(opt.id)
     var style = 'style = "{}"'.format(opt.sytle)
-    var dataRole = 'data-role = "{}"'.format(opt.dataRole)
+    if (opt.dataRole) {
+        var dataRole = 'data-role = "{}"'.format(opt.dataRole)
+    }
     var innerHTML = opt.innerHTML
 
     return "<div {dataRole} {id} {style}> {innerHTML} </div>".format({
@@ -32,10 +34,10 @@ var createDiv = function(opt) {
 
 $(document).ready(function() {
     var pages = aData.list
-    var pageIndex = ""
+    var pageStr = ""
     pages.forEach(function(page) {
         var elements = page.elements
-        var temp
+        var eleStr = ""
         elements.forEach(function(element) {
             var imgDIV = createImg({
                 "src": element.properties.src,
@@ -48,14 +50,14 @@ $(document).ready(function() {
                 "style": element.css,
                 "innerHTML": imgDIV
             })
-            temp += elementDIV
+            eleStr += elementDIV
         })
         var pageDIV = createDiv({
             "id": page.num,
-            "innerHTML": temp,
+            "innerHTML": eleStr,
             "dataRole": "page"
         })
-        pageIndex += pageDIV
+        pageStr += pageDIV
     })
-    $("#container").append(pageIndex)
+    $("#container").append(pageStr)
 })
