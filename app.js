@@ -8,7 +8,12 @@ var createImg = function(opt) {
     } else if (opt.imgsrc) {
         var src = 'src = "{}"'.format(opt.imgsrc)
     }
-    var style = 'style = "{}"'.format(opt.style)
+    var style
+    if (opt.style) {
+        var str = JSON.stringify(opt.style).replace(/,/g, ";").replace(/"/g, "").replace(/\{/, "").replace(/\}/, "")
+        style = 'style = "{}"'.format(str)
+    }
+
     return "<img {src} {style}>".format({
         "src": src,
         "style": style
@@ -17,12 +22,14 @@ var createImg = function(opt) {
 
 var createDiv = function(opt) {
     var id = 'id = "{}"'.format(opt.id)
-    var style = 'style = "{}"'.format(opt.sytle)
     if (opt.dataRole) {
         var dataRole = 'data-role = "{}"'.format(opt.dataRole)
     }
     var innerHTML = opt.innerHTML
-
+    if (opt.style) {
+        var str = JSON.stringify(opt.style).replace(/,/g, ";").replace(/"/g, "").replace(/\{/, "").replace(/\}/, "")
+        var style = 'style = "{}"'.format(str)
+    }
     return "<div {dataRole} {id} {style}> {innerHTML} </div>".format({
         "id": id,
         "dataRole": dataRole,
