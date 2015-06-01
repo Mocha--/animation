@@ -71,4 +71,8 @@ $(document).ready(function() {
         pageStr += pageDIV
     })
     $("#container").append(pageStr)
+
+    $("#pageone").on("swipe", function(){
+    	window.location.href = ""
+    })
 })
