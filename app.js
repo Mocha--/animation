@@ -30,12 +30,12 @@ $(document).ready(function() {
             var imgDIV = createImg({
             	"src" : element.properties.src, 
             	"imgsrc" :element.properties.imgSrc, 
-            	"style" : element.properties.imgStyle
+            	"style" : element.properties.imgStyle.replace(/","/g, ";")
             })
             console.log(imgDIV)
             var elementDIV = createDiv({
                 "id": null,
-                "style": element.css,
+                "style": element.css.replace(/","/g, ";"),
                 "innerHTML": imgDIV
             })
             temp += elementDIV
