@@ -33,7 +33,7 @@ var createDiv = function(opt) {
     return "<div {dataRole} {id} {style}> {innerHTML} </div>".format({
         "id": id,
         "dataRole": dataRole,
-        "sytle": style,
+        "style": style,
         "innerHTML": innerHTML
     })
 
