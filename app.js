@@ -8,10 +8,10 @@ var createImg = function(opt) {
     } else if (opt.imgsrc) {
         var src = 'src = "{}"'.format(opt.imgsrc)
     }
-    var style
+
     if (opt.style) {
         var str = JSON.stringify(opt.style).replace(/,/g, ";").replace(/"/g, "").replace(/\{/, "").replace(/\}/, "")
-        style = 'style = "{}"'.format(str)
+        var style = 'style = "{}"'.format(str)
     }
 
     return "<img {src} {style}>".format({
@@ -33,7 +33,7 @@ var createDiv = function(opt) {
     return "<div {dataRole} {id} {style}> {innerHTML} </div>".format({
         "id": id,
         "dataRole": dataRole,
-        "sytle": style,
+        "style": style,
         "innerHTML": innerHTML
     })
 
@@ -59,9 +59,13 @@ $(document).ready(function() {
             })
             eleStr += elementDIV
         })
+        var contentDIV = createDiv({
+            "innerHTML": eleStr,
+            "dataRole": "content"
+        })
         var pageDIV = createDiv({
             "id": page.num,
-            "innerHTML": eleStr,
+            "innerHTML": contentDIV,
             "dataRole": "page"
         })
         pageStr += pageDIV
