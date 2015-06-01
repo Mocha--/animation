@@ -11,6 +11,10 @@
     -webkit-animation-iteration-count: 1;
 }
 
+body {
+    margin: 0px;
+}
+
 .img {
     position: absolute;
 }
