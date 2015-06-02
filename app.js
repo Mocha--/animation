@@ -75,7 +75,6 @@ $(document).ready(function() {
                 "imgsrc": element.properties.imgSrc,
                 "style": element.properties.imgStyle
             })
-            console.log(imgDIV)
             var elementDIV = createDiv({
                 "id": null,
                 "style": element.css,
@@ -94,6 +93,7 @@ $(document).ready(function() {
         })
         pageStr += pageDIV
     })
+    console.log(pageStr)
     $("#container").append(pageStr)
 
     $("#container").on("swipe", function() {

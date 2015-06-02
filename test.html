@@ -10,7 +10,7 @@
     <script>
     $(function() {
         $("#p1").on("swipe", swipeHandler);
-        $(window).on("orientationchange",function()
+
         function swipeHandler(event) {
             $(event.target).addClass("animated shake");
             window.location.href = "#p2"
