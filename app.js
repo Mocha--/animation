@@ -2,6 +2,9 @@
 
 format.extend(String.prototype)
 
+var curPage = 1
+var MAXPAGE = aData.list.length
+
 var createImg = function(opt) {
     if (opt.src) {
         var src = 'src = "{}"'.format(opt.src)
@@ -75,7 +78,6 @@ $(document).ready(function() {
                 "imgsrc": element.properties.imgSrc,
                 "style": element.properties.imgStyle
             })
-            console.log(imgDIV)
             var elementDIV = createDiv({
                 "id": null,
                 "style": element.css,
@@ -88,7 +90,7 @@ $(document).ready(function() {
             "dataRole": "content"
         })
         var pageDIV = createDiv({
-            "id": page.num,
+            "id": "page" + page.num,
             "innerHTML": contentDIV,
             "dataRole": "page"
         })
@@ -96,7 +98,17 @@ $(document).ready(function() {
     })
     $("#container").append(pageStr)
 
-    $("#container").on("swipe", function() {
-        window.location.href = "#2"
+    $("#container").on("swipeleft", function() {
+        if (curPage <= MAXPAGE - 1) {
+            curPage += 1
+        }
+        window.location.href = "#page" + curPage.toString()
+    })
+
+    $("#container").on("swiperight", function() {
+        if (curPage >= 2) {
+            curPage -= 1
+        }
+        window.location.href = "#page" + curPage.toString()
     })
 })
