@@ -6,9 +6,15 @@ var curPage = 1
 var MAXPAGE = aData.list.length
 
 var aniMap = {
-    "type11": ["flipOutY"],
-    "type13": ["fadeIntRight"],
-    "type12": ["rotateInDownLeft"]
+
+    "type1": ["fadeInLeft", "", "fadeInRight", ""],
+    "type2": ["fadeInLeftBig", "fadeInDownBig", "fadeInRightBig", "fadeInUpBig"],
+    "type3": ["pulse", "", "", ""],
+    "type8": ["flip", "", "", "flip"],
+    "type11": ["flipOutY", "", "", ""],
+    "type12": ["rotateInDownLeft", "", "", ""],
+    "type13": ["fadeInRight", "", "", ""]
+
 }
 
 var createImg = function(opt) {
