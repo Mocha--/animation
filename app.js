@@ -2,14 +2,9 @@
 
 format.extend(String.prototype)
 
-var curPage = 1
+var pages = aData.list
+var curPage = 0
 var MAXPAGE = aData.list.length
-
-var aniMap = {
-    "type11": ["flipOutY"],
-    "type13": ["fadeIntRight"],
-    "type12": ["rotateInDownLeft"]
-}
 
 var createImg = function(opt) {
     if (opt.src) {
@@ -18,19 +13,20 @@ var createImg = function(opt) {
         var src = 'src = "{}"'.format(opt.imgsrc)
     }
     if (opt.style) {
-        if (opt.style.left)
-            opt.style.left = opt.style.left.toString() + "px"
-        if (opt.style.right)
-            opt.style.right = opt.style.right.toString() + "px"
-        if (opt.style.top)
-            opt.style.top = opt.style.top.toString() + "px"
-        if (opt.style.bottom)
-            opt.style.bottom = opt.style.bottom.toString() + "px"
-        if (opt.style.height)
-            opt.style.height = opt.style.height.toString() + "px"
-        if (opt.style.width)
-            opt.style.width = opt.style.width.toString() + "px"
-        var str = JSON.stringify(opt.style).replace(/,/g, ";").replace(/"/g, "").replace(/\{/, "").replace(/\}/, "")
+        var tmp = Object.create(opt.style)
+        if (tmp.left)
+            tmp.left = tmp.left.toString() + "px"
+        if (tmp.right)
+            tmp.right = tmp.right.toString() + "px"
+        if (tmp.top)
+            tmp.top = tmp.top.toString() + "px"
+        if (tmp.bottom)
+            tmp.bottom = tmp.bottom.toString() + "px"
+        if (tmp.height)
+            tmp.height = tmp.height.toString() + "px"
+        if (tmp.width)
+            tmp.width = tmp.width.toString() + "px"
+        var str = JSON.stringify(tmp).replace(/,/g, ";").replace(/"/g, "").replace(/\{/, "").replace(/\}/, "")
         var style = 'style = "{}"'.format(str)
     } else if (opt.imgsrc) {
         var str = "cover"
@@ -55,19 +51,20 @@ var createDiv = function(opt) {
 
     var innerHTML = opt.innerHTML
     if (opt.style) {
-        if (opt.style.left)
-            opt.style.left = opt.style.left.toString() + "px"
-        if (opt.style.right)
-            opt.style.right = opt.style.right.toString() + "px"
-        if (opt.style.top)
-            opt.style.top = opt.style.top.toString() + "px"
-        if (opt.style.bottom)
-            opt.style.bottom = opt.style.bottom.toString() + "px"
-        if (opt.style.height)
-            opt.style.height = opt.style.height.toString() + "px"
-        if (opt.style.width)
-            opt.style.width = opt.style.width.toString() + "px"
-        var str = JSON.stringify(opt.style).replace(/,/g, ";").replace(/"/g, "").replace(/\{/, "").replace(/\}/, "")
+        var tmp = Object.create(opt.style)
+        if (tmp.left)
+            tmp.left = tmp.left.toString() + "px"
+        if (tmp.right)
+            tmp.right = tmp.right.toString() + "px"
+        if (tmp.top)
+            tmp.top = tmp.top.toString() + "px"
+        if (tmp.bottom)
+            tmp.bottom = tmp.bottom.toString() + "px"
+        if (tmp.height)
+            tmp.height = tmp.height.toString() + "px"
+        if (tmp.width)
+            tmp.width = tmp.width.toString() + "px"
+        var str = JSON.stringify(tmp).replace(/,/g, ";").replace(/"/g, "").replace(/\{/, "").replace(/\}/, "")
         var style = 'style = "{}"'.format(str)
     }
     return "<div {id} {class} {dataRole} {style}> {innerHTML} </div>".format({
@@ -79,20 +76,52 @@ var createDiv = function(opt) {
     })
 }
 
+var loadPage = function(pageIndex) {
+
+    var elements = pages[pageIndex].elements
+    var eleStr = ""
+    elements.forEach(function(element, eleIndex) {
+        var imgDIV = createImg({
+            "src": element.properties.src,
+            "imgsrc": element.properties.imgSrc,
+            "style": element.properties.imgStyle
+        })
+        var elementDIV = createDiv({
+            "id": "p{}e{}".format(pageIndex, eleIndex),
+            "class": "imgDiv",
+            "style": element.css,
+            "innerHTML": imgDIV
+        })
+        eleStr += elementDIV
+        console.log(element.css)
+    })
+    var pageDIV = createDiv({
+        "id": "p{}".format(pageIndex),
+        "innerHTML": eleStr
+    })
+    $("#container").html("")
+    $("#container").append(pageDIV)
+}
+
+var init = function() {
+    loadPage(curPage)
+}
+
 $(document).ready(function() {
+    /*
     var pages = aData.list
     var pageStr = ""
-    pages.forEach(function(page) {
+    pages.forEach(function(page, pageIndex) {
         var elements = page.elements
         var eleStr = ""
-        elements.forEach(function(element) {
+        elements.forEach(function(element, eleIndex) {
             var imgDIV = createImg({
                 "src": element.properties.src,
                 "imgsrc": element.properties.imgSrc,
                 "style": element.properties.imgStyle
             })
             var elementDIV = createDiv({
-                "id": null,
+                "id": "p{}e{}".format(pageIndex, eleIndex),
                 "class": "imgDiv",
                 "style": element.css,
                 "innerHTML": imgDIV
@@ -104,26 +133,30 @@ $(document).ready(function() {
             "dataRole": "content"
         })
         var pageDIV = createDiv({
-            "id": "page" + page.num,
+            "id": "p{}".format(pageIndex),
             "innerHTML": contentDIV,
             "dataRole": "page"
         })
         pageStr += pageDIV
     })
     $("#container").append(pageStr)
+    */
+
+    init()
 
     $("#container").on("swipeleft", function() {
-        if (curPage <= MAXPAGE - 1) {
-            curPage += 1
+        if (curPage >= MAXPAGE - 1) {
+            return
         }
-        window.location.href = "#page" + curPage.toString()
-
+        curPage += 1
+        loadPage(curPage)
     })
 
     $("#container").on("swiperight", function() {
-        if (curPage >= 2) {
-            curPage -= 1
+        if (curPage <= 0) {
+            return
         }
-        window.location.href = "#page" + curPage.toString()
+        curPage -= 1
+        loadPage(curPage)
     })
 })
