@@ -5,7 +5,11 @@ format.extend(String.prototype)
 var curPage = 1
 var MAXPAGE = aData.list.length
 
-var aniMap = []
+var aniMap = {
+    "type11": ["flipOutY"],
+    "type13": ["fadeIntRight"],
+    "type12": ["rotateInDownLeft"]
+}
 
 var createImg = function(opt) {
     if (opt.src) {
@@ -113,6 +117,7 @@ $(document).ready(function() {
             curPage += 1
         }
         window.location.href = "#page" + curPage.toString()
+
     })
 
     $("#container").on("swiperight", function() {
