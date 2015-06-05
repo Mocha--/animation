@@ -11,7 +11,7 @@ var createImg = function(opt) {
     } else if (opt.imgsrc) {
         var src = 'src = "{}"'.format(opt.imgsrc)
     }
-
+    console.log(opt)
     if (opt.style) {
         if (opt.style.left)
             opt.style.left = opt.style.left.toString() + "px"
@@ -26,6 +26,10 @@ var createImg = function(opt) {
         if (opt.style.width)
             opt.style.width = opt.style.width.toString() + "px"
         var str = JSON.stringify(opt.style).replace(/,/g, ";").replace(/"/g, "").replace(/\{/, "").replace(/\}/, "")
+        var style = 'style = "{}"'.format(str)
+    }
+    else if(opt.imgsrc){
+        var str = "cover"
         var style = 'style = "{}"'.format(str)
     }
 
@@ -96,7 +100,6 @@ $(document).ready(function() {
         })
         pageStr += pageDIV
     })
-    console.log(pageStr)
     $("#container").append(pageStr)
 
     $("#container").on("swipeleft", function() {
