@@ -5,3 +5,7 @@ body {
 img {
     position: absolute;
 }
+
+.ui-content{
+	padding: 0px
+}
