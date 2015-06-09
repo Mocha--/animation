@@ -2,7 +2,8 @@
 
 format.extend(String.prototype)
 
-var curPage = 1
+var pages = aData.list
+var curPage = 0
 var MAXPAGE = aData.list.length
 
 var aniMap = {
@@ -24,19 +25,20 @@ var createImg = function(opt) {
         var src = 'src = "{}"'.format(opt.imgsrc)
     }
     if (opt.style) {
-        if (opt.style.left)
-            opt.style.left = opt.style.left.toString() + "px"
-        if (opt.style.right)
-            opt.style.right = opt.style.right.toString() + "px"
-        if (opt.style.top)
-            opt.style.top = opt.style.top.toString() + "px"
-        if (opt.style.bottom)
-            opt.style.bottom = opt.style.bottom.toString() + "px"
-        if (opt.style.height)
-            opt.style.height = opt.style.height.toString() + "px"
-        if (opt.style.width)
-            opt.style.width = opt.style.width.toString() + "px"
-        var str = JSON.stringify(opt.style).replace(/,/g, ";").replace(/"/g, "").replace(/\{/, "").replace(/\}/, "")
+        var tmp = Object.create(opt.style)
+        if (tmp.left)
+            tmp.left = tmp.left.toString() + "px"
+        if (tmp.right)
+            tmp.right = tmp.right.toString() + "px"
+        if (tmp.top)
+            tmp.top = tmp.top.toString() + "px"
+        if (tmp.bottom)
+            tmp.bottom = tmp.bottom.toString() + "px"
+        if (tmp.height)
+            tmp.height = tmp.height.toString() + "px"
+        if (tmp.width)
+            tmp.width = tmp.width.toString() + "px"
+        var str = JSON.stringify(tmp).replace(/,/g, ";").replace(/"/g, "").replace(/\{/, "").replace(/\}/, "")
         var style = 'style = "{}"'.format(str)
     } else if (opt.imgsrc) {
         var str = "cover"
@@ -54,26 +56,48 @@ var createDiv = function(opt) {
     if (opt.dataRole) {
         var dataRole = 'data-role = "{}"'.format(opt.dataRole)
     }
-
-    if (opt.class) {
-        var cla = ' class = "{}"'.format(opt.class)
-    }
-
     var innerHTML = opt.innerHTML
     if (opt.style) {
-        if (opt.style.left)
-            opt.style.left = opt.style.left.toString() + "px"
-        if (opt.style.right)
-            opt.style.right = opt.style.right.toString() + "px"
-        if (opt.style.top)
-            opt.style.top = opt.style.top.toString() + "px"
-        if (opt.style.bottom)
-            opt.style.bottom = opt.style.bottom.toString() + "px"
-        if (opt.style.height)
-            opt.style.height = opt.style.height.toString() + "px"
-        if (opt.style.width)
-            opt.style.width = opt.style.width.toString() + "px"
-        var str = JSON.stringify(opt.style).replace(/,/g, ";").replace(/"/g, "").replace(/\{/, "").replace(/\}/, "")
+        var tmp = Object.create(null)
+        tmp = Object.create(Object.prototype, opt.style)
+        console.log(tmp)
+        if (tmp.left)
+            tmp.left = tmp.left.toString() + "px"
+        if (tmp.right)
+            tmp.right = tmp.right.toString() + "px"
+        if (tmp.top)
+            tmp.top = tmp.top.toString() + "px"
+        if (tmp.bottom)
+            tmp.bottom = tmp.bottom.toString() + "px"
+        if (tmp.height)
+            tmp.height = tmp.height.toString() + "px"
+        if (tmp.width)
+            tmp.width = tmp.width.toString() + "px"
+        //console.log(tmp)
+        var str = JSON.stringify(tmp).replace(/,/g, ";").replace(/"/g, "").replace(/\{/, "").replace(/\}/, "")
+            //var style = 'style = "{}"'.format(str)
+    }
+    var animation = {}
+    if (opt.anim) {
+        if (opt.anim.type != null && opt.anim.direction != null) {
+            animation.class = "animated " + aniMap["type{}".format(opt.anim.type)][opt.anim.direction]
+
+        }
+        if (opt.anim.duration != null && opt.anim.delay != null && opt.anim.countNum != null) {
+            animation.style = " ;-vendor-animation-duration: {duration};-vendor-animation-delay: {delay};-vendor-animation-iteration-count: {countNum};".format({
+                "duration": opt.anim.duration,
+                "delay": opt.anim.delay,
+                "countNum": opt.anim.countNum
+            })
+        }
+    }
+
+    if (opt.class) {
+        var cla = ' class = "{} {}"'.format(opt.class, animation.class)
+    }
+    if (animation.style) {
+        var style = ' style = "{}"'.format(str + animation.style)
+    } else {
         var style = 'style = "{}"'.format(str)
     }
     return "<div {id} {class} {dataRole} {style}> {innerHTML} </div>".format({
@@ -85,59 +109,72 @@ var createDiv = function(opt) {
     })
 }
 
-$(document).ready(function() {
-    var pages = aData.list
-    var pageStr = ""
-    pages.forEach(function(page) {
-        var elements = page.elements
-        var eleStr = ""
-        elements.forEach(function(element) {
-            var imgDIV = createImg({
-                "src": element.properties.src,
-                "imgsrc": element.properties.imgSrc,
-                "style": element.properties.imgStyle
-            })
-            if(element.content != ""){
-                var content = createDiv({
-                    "innerHTML": element.content
-                })
-            }
-            var elementDIV = createDiv({
-                "id": null,
-                "class": "imgDiv",
-                "style": element.css,
-                "innerHTML": imgDIV
-            })
-            eleStr += elementDIV
-            eleStr += content
-            console.log(content           )
+var loadPage = function(pageIndex) {
 
+    var elements = pages[pageIndex].elements
+    var eleStr = ""
+    elements.forEach(function(element, eleIndex) {
+        var imgDIV = createImg({
+            "src": element.properties.src,
+            "imgsrc": element.properties.imgSrc,
+            "style": element.properties.imgStyle
         })
-        var contentDIV = createDiv({
-            "innerHTML": eleStr,
-            "dataRole": "content"
+
+        if (element.properties.anim) {
+            var animationAttr = element.properties.anim[0]
+        } else {
+            var animationAttr = null
+        }
+
+        if(element.content != ""){
+            var content = createDiv({
+                "innerHTML": element.content,
+                "style": element.css,
+                "class": "contentDiv",
+                "anim": animationAttr 
+            })
+        }
+
+        var elementDIV = createDiv({
+            "id": "p{}e{}".format(pageIndex, eleIndex),
+            "class": "imgDiv",
+            "style": element.css,
+            // mu qian wei zhi , bu zhidao hui bu hui you duo ge dong hua
+            "anim": animationAttr,
+            "innerHTML": imgDIV
         })
-        var pageDIV = createDiv({
-            "id": "page" + page.num,
-            "innerHTML": contentDIV,
-            "dataRole": "page"
-        })
-        pageStr += pageDIV
+        eleStr += elementDIV
+        eleStr += content
     })
-    $("#container").append(pageStr)
+    var pageDIV = createDiv({
+        "id": "p{}".format(pageIndex),
+        "innerHTML": eleStr
+    })
+    $("#container").html("")
+    $("#container").append(pageDIV)
+}
+
+var init = function() {
+    loadPage(curPage)
+}
+
+$(document).ready(function() {
+
+    init()
 
     $("#container").on("swipeleft", function() {
-        if (curPage <= MAXPAGE - 1) {
-            curPage += 1
+        if (curPage >= MAXPAGE - 1) {
+            return
         }
-        window.location.href = "#page" + curPage.toString()
-
+        curPage += 1
+        loadPage(curPage)
     })
 
     $("#container").on("swiperight", function() {
-        if (curPage >= 2) {
-            curPage -= 1
+        if (curPage <= 0) {
+            return
         }
-        window.location.href = "#page" + curPage.toString()
+        curPage -= 1
+        loadPage(curPage)
     })
 })

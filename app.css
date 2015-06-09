@@ -9,3 +9,7 @@ body {
 .ui-content{
 	padding: 0px
 }
+
+.contentDiv {
+    position: absolute;
+}
