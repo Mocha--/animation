@@ -24,7 +24,28 @@ var createImg = function(opt) {
     } else if (opt.imgsrc) {
         var src = 'src = "{}"'.format(opt.imgsrc)
     }
+
     if (opt.style) {
+        var tmp = {}
+        var keys = Object.keys(opt.style)
+        console.log(keys.length)
+        for(var i = 0; i < keys.length; i++){
+            if(keys[i] == "left")
+                tmp["left"] = opt.style.left.toString() + "px"
+            else if (keys[i] == "right")
+                tmp["right"] = opt.style.right.toString() + "px"
+            else if (keys[i] == "top")
+                tmp["top"] = opt.style.top.toString() + "px"
+            else if (keys[i] == "bottom")
+                tmp["bottom"] = opt.style.bottom.toString() + "px"
+            else if (keys[i] == "height")
+                tmp["height"] = opt.style.height.toString() + "px"
+            else if (keys[i] == "width")
+                tmp["width"] = opt.style.width.toString() + "px"
+            else
+                tmp[keys[i]] = opt.style[keys[i]]
+        }
+        /*
         var tmp = Object.create(opt.style)
         if (tmp.left)
             tmp.left = tmp.left.toString() + "px"
@@ -37,7 +58,7 @@ var createImg = function(opt) {
         if (tmp.height)
             tmp.height = tmp.height.toString() + "px"
         if (tmp.width)
-            tmp.width = tmp.width.toString() + "px"
+            tmp.width = tmp.width.toString() + "px"*/
         var str = JSON.stringify(tmp).replace(/,/g, ";").replace(/"/g, "").replace(/\{/, "").replace(/\}/, "")
         var style = 'style = "{}"'.format(str)
     } else if (opt.imgsrc) {
@@ -58,9 +79,26 @@ var createDiv = function(opt) {
     }
     var innerHTML = opt.innerHTML
     if (opt.style) {
-        var tmp = Object.create(null)
-        tmp = Object.create(Object.prototype, opt.style)
-        console.log(tmp)
+        var tmp = {}
+        var keys = Object.keys(opt.style)
+        console.log(keys.length)
+        for(var i = 0; i < keys.length; i++){
+            if(keys[i] == "left")
+                tmp["left"] = opt.style.left.toString() + "px"
+            else if (keys[i] == "right")
+                tmp["right"] = opt.style.right.toString() + "px"
+            else if (keys[i] == "top")
+                tmp["top"] = opt.style.top.toString() + "px"
+            else if (keys[i] == "bottom")
+                tmp["bottom"] = opt.style.bottom.toString() + "px"
+            else if (keys[i] == "height")
+                tmp["height"] = opt.style.height.toString() + "px"
+            else if (keys[i] == "width")
+                tmp["width"] = opt.style.width.toString() + "px"
+            else
+                tmp[keys[i]] = opt.style[keys[i]]
+        }
+        /*
         if (tmp.left)
             tmp.left = tmp.left.toString() + "px"
         if (tmp.right)
@@ -72,7 +110,7 @@ var createDiv = function(opt) {
         if (tmp.height)
             tmp.height = tmp.height.toString() + "px"
         if (tmp.width)
-            tmp.width = tmp.width.toString() + "px"
+            tmp.width = tmp.width.toString() + "px"*/
         //console.log(tmp)
         var str = JSON.stringify(tmp).replace(/,/g, ";").replace(/"/g, "").replace(/\{/, "").replace(/\}/, "")
             //var style = 'style = "{}"'.format(str)
