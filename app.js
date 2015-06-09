@@ -45,20 +45,6 @@ var createImg = function(opt) {
             else
                 tmp[keys[i]] = opt.style[keys[i]]
         }
-        /*
-        var tmp = Object.create(opt.style)
-        if (tmp.left)
-            tmp.left = tmp.left.toString() + "px"
-        if (tmp.right)
-            tmp.right = tmp.right.toString() + "px"
-        if (tmp.top)
-            tmp.top = tmp.top.toString() + "px"
-        if (tmp.bottom)
-            tmp.bottom = tmp.bottom.toString() + "px"
-        if (tmp.height)
-            tmp.height = tmp.height.toString() + "px"
-        if (tmp.width)
-            tmp.width = tmp.width.toString() + "px"*/
         var str = JSON.stringify(tmp).replace(/,/g, ";").replace(/"/g, "").replace(/\{/, "").replace(/\}/, "")
         var style = 'style = "{}"'.format(str)
     } else if (opt.imgsrc) {
@@ -98,22 +84,7 @@ var createDiv = function(opt) {
             else
                 tmp[keys[i]] = opt.style[keys[i]]
         }
-        /*
-        if (tmp.left)
-            tmp.left = tmp.left.toString() + "px"
-        if (tmp.right)
-            tmp.right = tmp.right.toString() + "px"
-        if (tmp.top)
-            tmp.top = tmp.top.toString() + "px"
-        if (tmp.bottom)
-            tmp.bottom = tmp.bottom.toString() + "px"
-        if (tmp.height)
-            tmp.height = tmp.height.toString() + "px"
-        if (tmp.width)
-            tmp.width = tmp.width.toString() + "px"*/
-        //console.log(tmp)
         var str = JSON.stringify(tmp).replace(/,/g, ";").replace(/"/g, "").replace(/\{/, "").replace(/\}/, "")
-            //var style = 'style = "{}"'.format(str)
     }
     var animation = {}
     if (opt.anim) {
