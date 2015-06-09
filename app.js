@@ -97,6 +97,11 @@ $(document).ready(function() {
                 "imgsrc": element.properties.imgSrc,
                 "style": element.properties.imgStyle
             })
+            if(element.content != ""){
+                var content = createDiv({
+                    "innerHTML": element.content
+                })
+            }
             var elementDIV = createDiv({
                 "id": null,
                 "class": "imgDiv",
@@ -104,6 +109,9 @@ $(document).ready(function() {
                 "innerHTML": imgDIV
             })
             eleStr += elementDIV
+            eleStr += content
+            console.log(content           )
+
         })
         var contentDIV = createDiv({
             "innerHTML": eleStr,
