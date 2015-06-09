@@ -6,6 +6,18 @@ var pages = aData.list
 var curPage = 0
 var MAXPAGE = aData.list.length
 
+var aniMap = {
+
+    "type1": ["fadeInLeft", "", "fadeInRight", ""],
+    "type2": ["fadeInLeftBig", "fadeInDownBig", "fadeInRightBig", "fadeInUpBig"],
+    "type3": ["pulse", "", "", ""],
+    "type8": ["flip", "", "", "flip"],
+    "type11": ["flipOutY", "", "", ""],
+    "type12": ["rotateInDownLeft", "", "", ""],
+    "type13": ["fadeInRight", "", "", ""]
+
+}
+
 var createImg = function(opt) {
     if (opt.src) {
         var src = 'src = "{}"'.format(opt.src)
@@ -45,10 +57,6 @@ var createDiv = function(opt) {
         var dataRole = 'data-role = "{}"'.format(opt.dataRole)
     }
 
-    if (opt.class) {
-        var cla = ' class = "{}"'.format(opt.class)
-    }
-
     var innerHTML = opt.innerHTML
     if (opt.style) {
         var tmp = Object.create(opt.style)
@@ -65,6 +73,30 @@ var createDiv = function(opt) {
         if (tmp.width)
             tmp.width = tmp.width.toString() + "px"
         var str = JSON.stringify(tmp).replace(/,/g, ";").replace(/"/g, "").replace(/\{/, "").replace(/\}/, "")
+            //var style = 'style = "{}"'.format(str)
+    }
+
+    var animation = {}
+    if (opt.anim) {
+        if (opt.anim.type != null && opt.anim.direction != null) {
+            animation.class = "animated " + aniMap["type{}".format(opt.anim.type)][opt.anim.direction]
+
+        }
+        if (opt.anim.duration != null && opt.anim.delay != null && opt.anim.countNum != null) {
+            animation.style = " ;-vendor-animation-duration: {duration};-vendor-animation-delay: {delay};-vendor-animation-iteration-count: {countNum};".format({
+                "duration": opt.anim.duration,
+                "delay": opt.anim.delay,
+                "countNum": opt.anim.countNum
+            })
+        }
+    }
+
+    if (opt.class) {
+        var cla = ' class = "{} {}"'.format(opt.class, animation.class)
+    }
+    if (animation.style) {
+        var style = ' style = "{}"'.format(str + animation.style)
+    } else {
         var style = 'style = "{}"'.format(str)
     }
     return "<div {id} {class} {dataRole} {style}> {innerHTML} </div>".format({
@@ -86,14 +118,20 @@ var loadPage = function(pageIndex) {
             "imgsrc": element.properties.imgSrc,
             "style": element.properties.imgStyle
         })
+        if (element.properties.anim) {
+            var animationAttr = element.properties.anim[0]
+        } else {
+            var animationAttr = null
+        }
         var elementDIV = createDiv({
             "id": "p{}e{}".format(pageIndex, eleIndex),
             "class": "imgDiv",
             "style": element.css,
+            // mu qian wei zhi , bu zhidao hui bu hui you duo ge dong hua
+            "anim": animationAttr,
             "innerHTML": imgDIV
         })
         eleStr += elementDIV
-        console.log(element.css)
     })
     var pageDIV = createDiv({
         "id": "p{}".format(pageIndex),
@@ -108,39 +146,6 @@ var init = function() {
 }
 
 $(document).ready(function() {
-    /*
-    var pages = aData.list
-    var pageStr = ""
-    pages.forEach(function(page, pageIndex) {
-        var elements = page.elements
-        var eleStr = ""
-        elements.forEach(function(element, eleIndex) {
-            var imgDIV = createImg({
-                "src": element.properties.src,
-                "imgsrc": element.properties.imgSrc,
-                "style": element.properties.imgStyle
-            })
-            var elementDIV = createDiv({
-                "id": "p{}e{}".format(pageIndex, eleIndex),
-                "class": "imgDiv",
-                "style": element.css,
-                "innerHTML": imgDIV
-            })
-            eleStr += elementDIV
-        })
-        var contentDIV = createDiv({
-            "innerHTML": eleStr,
-            "dataRole": "content"
-        })
-        var pageDIV = createDiv({
-            "id": "p{}".format(pageIndex),
-            "innerHTML": contentDIV,
-            "dataRole": "page"
-        })
-        pageStr += pageDIV
-    })
-    $("#container").append(pageStr)
-    */
 
     init()
 
